@@ -1,0 +1,10 @@
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Count</th>
+    </tr>
+    <tr *ngFor="let name of names" [ngClass]="getRowClass(name.count)">
+        <td>{{ name.name }}</td>
+        <td>{{ name.count }}</td>
+    </tr>
+</table>
